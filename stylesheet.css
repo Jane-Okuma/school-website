@@ -1,0 +1,82 @@
+.logo{
+    float: left;
+}
+a {
+  color: #4d0b36;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+a {
+  -webkit-transition: color 400ms, background-color 400ms;
+  transition: color 400ms, background-color 400ms;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+.learnmore{
+  background-color: orange;
+  
+}
+.learnmore:hover{
+  background-color: orangered;
+}
+*{
+    box-sizing: border-box;
+}
+.slides{
+    display: none;
+}
+.image{
+    vertical-align: middle;
+}
+.slideshow{
+    max-width: 800px;
+    max-height: 500px;
+    position: relative;
+    margin: auto;
+}
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 30s ease;
+  }
+  .active {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 30s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
